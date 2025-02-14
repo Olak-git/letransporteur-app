@@ -1,0 +1,9 @@
+.bc {
+    /* color: rgb(117, 117, 117); */
+    font-feature-settings: "pnum", "lnum";
+    letter-spacing: -0.055em;
+    /* line-height: 88px; */
+    /* font-size: 85px; */
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+}

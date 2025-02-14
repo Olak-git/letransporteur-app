@@ -1,0 +1,8 @@
+.item__link {
+    --translate: 10px;
+    transition: transform 350ms ease-in;
+    transform: translateY(var(--translate));
+}
+.item__link__scrolled {
+    --translate: 0px;
+}

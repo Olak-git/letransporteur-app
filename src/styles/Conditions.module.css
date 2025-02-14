@@ -1,0 +1,20 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .cnds article h1 {
+        @apply font-bold text-lg
+    }
+    .cnds article p {
+        @apply text-base
+    }
+    .cnds article>p:not(:first-child) {
+        
+    }
+    /* @media screen and (min-width: 768px) and (max-width: 876px) {
+      .cnds {
+        @apply md:pr-[70px]
+      }
+    } */
+}

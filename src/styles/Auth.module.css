@@ -1,0 +1,41 @@
+.borderStyleBase {
+    width: 30px;
+    height: 45px;
+}
+
+.borderStyleHighLighted {
+    border-color: "#03DAC6";
+}
+
+.underlineStyleBase {
+    /* width: 50px; */
+    flex:1;
+    border-radius: 4px;
+    font-size: 20px;
+    height: 45px;
+    background-color: rgb(241, 245, 249);
+    /* border-width: 0; */
+}
+
+.underlineStyleHighLighted {
+    border-color: "#03DAC6",
+}
+
+.animatelefteen {
+    animation: lefteen 1s infinite;
+}
+
+@keyframes lefteen{
+    0%{
+        transform: translateX(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50%{
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    100%{
+        transform: translateX(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+}

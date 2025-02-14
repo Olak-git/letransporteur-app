@@ -1,0 +1,18 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title {
+        @apply font-bold inline-block mb-2;
+    }
+    .inside_list li span {
+        @apply font-semibold
+    }
+}
+
+/* .title ul {
+    
+} */
+.inside_list {
+    list-style: inside !important;    
+}

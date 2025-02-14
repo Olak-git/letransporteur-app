@@ -1,0 +1,8 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title {
+      @apply text-[#481c4b] font-semibold border-b border-black mb-2;
+    }
+}

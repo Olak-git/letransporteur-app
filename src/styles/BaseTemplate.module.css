@@ -1,0 +1,11 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    @media screen and (min-width: 768px) and (max-width: 876px) {
+      .no_short {
+        @apply md:pr-[70px]
+      }
+    }
+}

@@ -1,0 +1,90 @@
+.animated_button {
+    --pcolor: #0EA5E9; /*#0EA5E9 || #00AD54*/
+    --tcolor: #ffffff; /*#212121*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--pcolor);
+    box-shadow: 0 0 0 2px var(--pcolor);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated_button svg {
+    position: absolute;
+    width: 24px;
+    fill: var(--pcolor);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated_button .arr_1 {
+    right: 16px;
+  }
+  
+  .animated_button .arr_2 {
+    left: -25%;
+  }
+  
+  .animated_button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--pcolor);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated_button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated_button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: var(--tcolor);
+    border-radius: 12px;
+  }
+  
+  .animated_button:hover .arr_1 {
+    right: -25%;
+  }
+  
+  .animated_button:hover .arr_2 {
+    left: 16px;
+  }
+  
+  .animated_button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated_button:hover svg {
+    fill: var(--tcolor);
+  }
+  
+  .animated_button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px var(--pcolor);
+  }
+  
+  .animated_button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  

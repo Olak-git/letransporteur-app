@@ -1,0 +1,67 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active {
+      /* bg-blue-500 hover:bg-blue-700 */
+      /* @apply bg-[#481c4b] text-white hover:text-black hover:font-thin font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;  hover:bg-[#481c4b90] hover:text-slate-200 */
+      @apply text-white/50
+    }
+
+    @media screen and (max-width: 400px) {
+      .notifications_hidden {
+        @apply hidden
+      }
+      .notifications_visible {
+        @apply block
+      }
+    }
+
+    /* @media screen and (min-width: 401px) {
+      .notifications_hidden {
+        @apply block
+      }
+      .notifications_visible {
+        @apply block
+      }
+    } */
+}
+
+.nav__link {
+  --spacing: 1em;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: calc(var(--spacing)/2) var(--spacing);
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing);
+  right: var(--spacing);
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1010px) {
+  .nav__link {
+    font-size: 0.65rem;
+    --spacing: 0.5em
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .nav__link {
+    letter-spacing: normal;
+  }
+}

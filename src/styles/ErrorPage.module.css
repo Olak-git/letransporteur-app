@@ -1,0 +1,26 @@
+.title {
+    font-weight: 300;
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 13px;
+}
+.code {
+    color: rgb(117, 117, 117);
+    font-feature-settings: "pnum", "lnum";
+    letter-spacing: -0.055em;
+    line-height: 88px;  
+    font-size: 85px;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+}
+.code span {
+    color: rgb(117, 117, 117);
+}
+.code_description {
+    letter-spacing: -0.035em;
+    line-height: 36px;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-feature-settings: "pnum", "lnum";
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+}
